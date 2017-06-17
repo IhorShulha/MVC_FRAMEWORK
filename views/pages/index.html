@@ -1,5 +1,6 @@
-This is the pages/index.html
-
 <br/>
-
-<?=$data['test_content']?>
+<?php foreach($data['pages'] as $page) { ?>
+<div style="margin-top: 20px;">
+    <a href="/page/view/<?=$page_data['alias']?>"><?=$page_data['title']?></a>
+</div>
+<?php } ?>
